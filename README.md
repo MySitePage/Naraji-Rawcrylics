@@ -316,7 +316,7 @@
     // NEW HERO IMAGE (your requested image)
     const heroImage = "https://i.postimg.cc/TPLyjys2/file-00000000485871fdbe9f78b9c8e666a1.png";
     
-    // Wall images in exact order (Yoyo.jpg first under hero, then the rest)
+    // Wall images in exact order - LAST IMAGE REPLACED with your new link
     const wallImages = [
       "https://i.postimg.cc/QxTn0X27/Yoyo.jpg",
       "https://i.postimg.cc/Wz2VcWRj/file_00000000e5f071f7bc8461a0f509ccd4_(1).jpg",
@@ -325,7 +325,7 @@
       "https://i.postimg.cc/0y5XxpMP/file_00000000b85c71fd87d30f2674b04c57.png",
       "https://i.postimg.cc/QtnSVKvz/file_000000004190722f9caa8c85702884dc_(2).jpg",
       "https://i.postimg.cc/gjwB9dn2/file_00000000a10c71fd9de893dd575156d6.png",
-      "https://i.postimg.cc/HkHNqXmc/file-00000000061c71fd83ac214e21c2343c-(1).jpg"
+      "https://i.postimg.cc/Sxs0vcqP/file-000000000cec71fdb2c2822181cca2d6-(1).jpg"  // NEW LAST IMAGE
     ];
 
     // Categories (completely unchanged from original)
@@ -419,7 +419,7 @@
       const app = document.getElementById('app');
       app.innerHTML = '';
       
-      // Hero image (new one you provided)
+      // Hero image
       const hero = document.createElement('img');
       hero.src = heroImage;
       hero.className = 'hero-img full-width-img';
@@ -549,4 +549,5 @@
     showHome();
   </script>
 </body>
-</html>      
+</html>
+      
