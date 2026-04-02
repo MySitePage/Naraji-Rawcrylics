@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Naraji Rawcrylics | Artisan Nail Sets</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
@@ -15,15 +15,17 @@
     body {
       background: #fff;
       font-family: 'Playfair Display', serif;
+      line-height: 0; /* Remove any extra spacing between elements */
     }
 
+    /* Header - fixed, clean, mobile friendly */
     .header {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       width: 100%;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       z-index: 1000;
@@ -32,6 +34,7 @@
       align-items: center;
       justify-content: space-between;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      line-height: normal;
     }
 
     .header-left .logo-img {
@@ -55,6 +58,7 @@
       padding: 0.5rem 0;
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
+      transition: opacity 0.2s;
     }
 
     .header-center a:active {
@@ -65,17 +69,21 @@
       width: 44px;
     }
 
-    /* Full width images - edge to edge */
+    /* FULL WIDTH IMAGES - EDGE TO EDGE, NO WHITE SPACE */
     .full-width-img {
       width: 100%;
       display: block;
       height: auto;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: top;
     }
 
     .hero-img {
       width: 100%;
       display: block;
-      margin-top: 68px;
+      margin-top: 68px; /* Space for fixed header */
     }
 
     /* Gallery page background */
@@ -87,15 +95,17 @@
       background-repeat: no-repeat;
     }
 
+    /* Gallery container - has slight padding for content but images inside are full width */
     .gallery-container {
       margin-top: 80px;
       padding: 1.5rem;
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
-      background: rgba(255, 255, 245, 0.9);
+      background: rgba(255, 255, 245, 0.92);
       border-radius: 28px;
       backdrop-filter: blur(3px);
+      line-height: normal;
     }
 
     .gallery-title {
@@ -148,8 +158,9 @@
       max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
-      background: rgba(255, 255, 245, 0.92);
+      background: rgba(255, 255, 245, 0.94);
       border-radius: 28px;
+      line-height: normal;
     }
 
     .back-btn {
@@ -164,6 +175,7 @@
       cursor: pointer;
       border: none;
       font-size: 0.95rem;
+      transition: background 0.2s;
     }
 
     .back-btn:active {
@@ -202,8 +214,9 @@
       text-align: center;
       padding: 2rem 1.5rem;
       background: rgba(255, 250, 240, 0.96);
-      margin-top: 2rem;
+      margin-top: 0;
       font-family: 'Playfair Display', serif;
+      line-height: 1.4;
     }
 
     .footer p {
@@ -221,6 +234,7 @@
       font-weight: 500;
     }
 
+    /* Mobile Responsive */
     @media (max-width: 768px) {
       .header {
         padding: 0.6rem 1rem;
@@ -248,6 +262,9 @@
         padding: 1rem;
         margin-top: 70px;
       }
+      .detail-title {
+        font-size: 1.7rem;
+      }
     }
 
     @media (max-width: 480px) {
@@ -270,6 +287,15 @@
         gap: 0.8rem;
       }
     }
+
+    /* Ensure absolutely no gaps on any element */
+    div, section, main, article {
+      line-height: 0;
+    }
+    
+    #app {
+      line-height: 0;
+    }
   </style>
 </head>
 <body>
@@ -287,8 +313,8 @@
   <div id="app"></div>
 
   <script>
-    // Hero image
-    const heroImage = "https://i.postimg.cc/QxTn0X27/Yoyo.jpg";
+    // NEW HERO IMAGE (your requested image)
+    const heroImage = "https://i.postimg.cc/TPLyjys2/file-00000000485871fdbe9f78b9c8e666a1.png";
     
     // Wall images in exact order (Yoyo.jpg first under hero, then the rest)
     const wallImages = [
@@ -302,7 +328,7 @@
       "https://i.postimg.cc/HkHNqXmc/file-00000000061c71fd83ac214e21c2343c-(1).jpg"
     ];
 
-    // Categories (unchanged)
+    // Categories (completely unchanged from original)
     const categories = {
       "Birthday Sets": {
         thumbnail: "https://i.postimg.cc/J7SvLG8F/Screenshot_2026_03_30_105319.png",
@@ -393,23 +419,30 @@
       const app = document.getElementById('app');
       app.innerHTML = '';
       
-      // Hero image
+      // Hero image (new one you provided)
       const hero = document.createElement('img');
       hero.src = heroImage;
       hero.className = 'hero-img full-width-img';
-      hero.alt = 'Hero';
+      hero.alt = 'Hero Banner';
+      hero.style.margin = '0';
+      hero.style.padding = '0';
       
       // Wall container
       const wall = document.createElement('div');
       wall.style.width = '100%';
+      wall.style.margin = '0';
+      wall.style.padding = '0';
+      wall.style.lineHeight = '0';
       
-      // Add all wall images
+      // Add all wall images edge-to-edge
       wallImages.forEach(url => {
         const img = document.createElement('img');
         img.src = url;
         img.className = 'full-width-img';
-        img.alt = 'Nail art';
+        img.alt = 'Nail art display';
         img.style.display = 'block';
+        img.style.margin = '0';
+        img.style.padding = '0';
         wall.appendChild(img);
       });
       
@@ -507,13 +540,13 @@
       footer.innerHTML = `
         <p>© 2026 naraji rawcrylics</p>
         <p class="phone">📞 <a href="tel:+17862514782">(786) 251-4782</a></p>
-        <p><a href="https://www.instagram.com/narajirawcrylics" target="_blank">@narajirawcrylics</a></p>
+        <p><a href="https://www.instagram.com/narajirawcrylics" target="_blank" rel="noopener noreferrer">@narajirawcrylics</a></p>
       `;
       document.body.appendChild(footer);
     }
     
-    // Start the site
+    // Initialize the site
     showHome();
   </script>
 </body>
-</html>
+</html>      
