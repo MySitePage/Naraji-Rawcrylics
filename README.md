@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -267,4 +267,117 @@
             <section class="price-list">
                 <h2 class="section-title">Price List<span>Investment in Beauty</span></h2>
                 <div class="price-category"><h3 class="price-category-title">✨ Signature Freestyle</h3><div class="price-grid"><div class="price-item"><span>Freestyle Full Set</span><span class="price-amount">$100</span></div></div><p style="font-size:0.85rem;">*All lengths except XL. Full creative control – trust the artist's vision*</p></div>
-                <div class="price-category"><h3 class="price-category-title">💅 Full Sets</h3><div class="price-grid"><div class="price-item"><span>Super Short</span><span class="price-amount">$50</span></div><div class="price-item"><span>Short</span><span class="price-amount">$60</span
+                <div class="price-category"><h3 class="price-category-title">💅 Full Sets</h3><div class="price-grid"><div class="price-item"><span>Super Short</span><span class="price-amount">$50</span></div><div class="price-item"><span>Short</span><span class="price-amount">$60</span></div><div class="price-item"><span>Medium</span><span class="price-amount">$70</span></div><div class="price-item"><span>Long</span><span class="price-amount">$80</span></div><div class="price-item"><span>XL</span><span class="price-amount">$90</span></div><div class="price-item"><span>XXL</span><span class="price-amount">$100</span></div><div class="price-item"><span>Multi-shape (per nail)</span><span class="price-amount">+$3</span></div></div></div>
+                <div class="price-category"><h3 class="price-category-title">🌈 Ombre Full Sets</h3><div class="price-grid"><div class="price-item"><span>Super Short</span><span class="price-amount">$60</span></div><div class="price-item"><span>Short</span><span class="price-amount">$70</span></div><div class="price-item"><span>Medium</span><span class="price-amount">$80</span></div><div class="price-item"><span>Long</span><span class="price-amount">$90</span></div><div class="price-item"><span>XL</span><span class="price-amount">$110</span></div><div class="price-item"><span>XXL</span><span class="price-amount">$125</span></div></div></div>
+                <div class="price-category"><h3 class="price-category-title">💖 Gel Services</h3><div class="price-grid"><div class="price-item"><span>Gel Manicure</span><span class="price-amount">$50</span></div><div class="price-item"><span>Gel Polish Change</span><span class="price-amount">$30</span></div></div></div>
+                <div class="price-category"><h3 class="price-category-title">🦶 Toe Services</h3><div class="price-grid"><div class="price-item"><span>Acrylic Big Toe</span><span class="price-amount">$10</span></div><div class="price-item"><span>Full Set Acrylic Toes</span><span class="price-amount">$45-60</span></div><div class="price-item"><span>Polygel Big Toe</span><span class="price-amount">$15</span></div><div class="price-item"><span>Full Set Polygel Toes</span><span class="price-amount">$55-65</span></div></div></div>
+                
+                <!-- PRESS-ON SECTION with image and "any day" note -->
+                <div class="price-category">
+                    <div class="two-column" style="gap: 30px;">
+                        <div style="flex:1">
+                            <h3 class="price-category-title">📦 Press-On Sets</h3>
+                            <div class="price-grid">
+                                <div class="price-item"><span>Sizing Kit</span><span class="price-amount">$10</span></div>
+                                <div class="price-item"><span>Toes + Hands Sizing Kit</span><span class="price-amount">$16</span></div>
+                                <div class="price-item"><span>Freestyle Press-Ons</span><span class="price-amount">$110</span></div>
+                                <div class="price-item"><span>Freestyle Press-Ons (Luxury)</span><span class="price-amount">$130</span></div>
+                            </div>
+                            <p style="margin-top: 15px; background: rgba(255,183,178,0.2); padding: 10px; border-radius: 12px; text-align: center;"><strong>✨ Press-ons can be purchased ANY DAY ✨</strong><br>Order your sizing kit, then your custom set – no appointment needed!</p>
+                        </div>
+                        <div class="side-image" style="flex:1">
+                            <img src="https://i.postimg.cc/85CS60Pk/Screenshot-20260403-163445-Docs-2.jpg" alt="Press-on nails example">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-category"><h3 class="price-category-title">🎨 Add-Ons</h3>
+                    <div class="price-grid">
+                        <div class="price-item"><span>French (per nail)</span><span class="price-amount">+$5</span></div>
+                        <div class="price-item"><span><strong>🔥 French Tip (All 10 fingers)</strong></span><span class="price-amount"><strong>+$10</strong></span></div>
+                        <div class="price-item"><span>Gel French (Full Set)</span><span class="price-amount">+$25</span></div>
+                        <div class="price-item"><span>Encapsulation (per nail)</span><span class="price-amount">+$7</span></div>
+                        <div class="price-item"><span>Cuticle Stones (per nail)</span><span class="price-amount">+$3</span></div>
+                        <div class="price-item"><span>Cluster Stones (per nail)</span><span class="price-amount">+$10</span></div>
+                        <div class="price-item"><span>3D Art (per nail)</span><span class="price-amount">+$12</span></div>
+                        <div class="price-item"><span>Basic Nail Art</span><span class="price-amount">+$8</span></div>
+                        <div class="price-item"><span>Nail Piercing (per nail)</span><span class="price-amount">+$3</span></div>
+                        <div class="price-item"><span>Marble (10 fingers)</span><span class="price-amount">+$15</span></div>
+                        <div class="price-item"><span>Soak Off</span><span class="price-amount">$25</span></div>
+                        <div class="price-item"><span>Soak Off (Not My Work)</span><span class="price-amount">$30</span></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- POLICIES (unchanged) -->
+            <section class="policies"><div class="policies-container"><h2 class="section-title">Booking Policies<span>Important Information</span></h2>
+                <div class="policy-item"><h3 class="policy-title"><i class="fas fa-money-bill-wave"></i> Deposit Required</h3><p class="policy-text">A $25 deposit is required to secure all appointments. Non-refundable.</p></div>
+                <div class="policy-item"><h3 class="policy-title"><i class="fas fa-clock"></i> Late Policy</h3><p class="policy-text">Please arrive on time. More than 10 minutes late may need to reschedule.</p></div>
+                <div class="policy-item"><h3 class="policy-title"><i class="fas fa-calendar-times"></i> No Call, No Show</h3><p class="policy-text">Will require a new deposit before booking again.</p></div>
+                <div class="policy-item"><h3 class="policy-title"><i class="fas fa-calendar-alt"></i> Rescheduling</h3><p class="policy-text">Notify at least 24 hours in advance. Deposit may be transferred once.</p></div>
+                <div class="policy-item"><h3 class="policy-title"><i class="fas fa-hand-peace"></i> Preparation</h3><p class="policy-text">Arrive with bare nails unless removal booked. No extra guests without approval. Address sent 24h before.</p></div>
+                <div class="policy-item"><h3 class="policy-title"><i class="fas fa-credit-card"></i> Payment</h3><p class="policy-text">Cash preferred. Zelle or Cash App accepted before service.</p></div>
+            </div></section>
+        </div>
+    </div>
+    
+    <!-- GALLERY PAGE (unchanged) -->
+    <div class="page" id="gallery-page"><div class="container"><section class="gallery-section"><h2 class="section-title">Nail Gallery<span>✨ My Latest Creations ✨</span></h2>
+        <div class="gallery-category"><h3 class="category-title">🎂 BIRTHDAY NAILS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="birthday-slider"></div></div></div>
+        <div class="gallery-category"><h3 class="category-title">💕 SIMPLE SETS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="simple-slider"></div></div></div>
+        <div class="gallery-category"><h3 class="category-title">🌸 SEASONAL SETS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="seasonal-slider"></div></div></div>
+        <div class="gallery-category"><h3 class="category-title">🦶 HANDS + TOES</h3><div class="gallery-slider-container"><div class="gallery-slider" id="handstoes-slider"></div></div></div>
+        <div class="gallery-category"><h3 class="category-title">📦 PRESS-ONS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="presson-slider"></div></div></div>
+    </section></div></div>
+    
+    <!-- BOOKING PAGE (unchanged) -->
+    <div class="page" id="booking-page"><section class="booking-hero"><div class="booking-content"><h1 class="booking-title">Book Your Appointment</h1><div class="booking-form-container"><form id="bookingForm"><div class="form-row"><div class="form-group"><label>First Name</label><input type="text" id="firstName" class="form-control" required></div><div class="form-group"><label>Last Name</label><input type="text" id="lastName" class="form-control" required></div></div><div class="form-row"><div class="form-group"><label>Phone</label><input type="tel" id="phone" class="form-control" placeholder="(786) 251-4782" required></div><div class="form-group"><label>Email</label><input type="email" id="email" class="form-control" placeholder="narajilove@gmail.com" required></div></div><div class="form-group"><label>Select Service</label><select id="service" class="form-control" required><option value="" disabled selected>Choose a service</option><option>Freestyle Full Set - $100</option><option>Acrylic Full Set - Short - $60</option><option>Acrylic Full Set - Medium - $70</option><option>Acrylic Full Set - Long - $80</option><option>Gel X Extensions - $80+</option><option>Ombre Full Set - $60-125</option><option>Gel Manicure - $50</option><option>Toe Service - $45-65</option><option>Custom Press-Ons - $110+</option><option>After Hours 9PM-11PM (+$40)</option><option>After Hours 12AM-2AM (+$60)</option><option>After Hours 2AM-4AM (+$80)</option><option>Soak Off Removal - $25</option></select></div><div class="form-row"><div class="form-group"><label>Preferred Date</label><input type="date" id="date" class="form-control" required></div><div class="form-group"><label>Preferred Time</label><select id="time" class="form-control" required><option value="" disabled selected>Select time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM (After Hours +$40)</option><option>12:00 AM (After Hours +$60)</option><option>2:00 AM (After Hours +$80)</option></select></div></div><div class="form-group"><label>Notes / Inspiration</label><textarea id="notes" class="form-control" rows="4"></textarea></div><div class="form-submit"><button type="submit" class="submit-btn">Submit Booking Request</button></div></form><div style="margin-top:30px; text-align:center;"><p><strong>📌 Important:</strong> $25 deposit required. Confirmation within 24h. Cash/Zelle/CashApp accepted.</p></div></div></div></section></div>
+    
+    <footer><div class="container"><div class="footer-container"><div class="footer-brand"><div class="footer-logo">NarajiRawcrylics</div><p>Luxury Beauty • Self-Care</p></div><div class="footer-contact"><h3>Contact</h3><ul class="contact-info"><li><i class="fas fa-envelope"></i> narajilove@gmail.com</li><li><i class="fas fa-phone"></i> (786) 251-4782</li><li><i class="fab fa-instagram"></i> @narajirawcrylics</li></ul></div><div class="footer-social"><h3>Follow</h3><div class="social-icons"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fas fa-envelope"></i></a><a href="#"><i class="fas fa-phone"></i></a></div></div></div><div class="copyright">&copy; 2024 NarajiRawcrylics. All rights reserved.</div></div></footer>
+    
+    <div class="modal-overlay" id="confirmationModal"><div class="modal-content"><div class="modal-icon"><i class="fas fa-check-circle"></i></div><h2 class="modal-title">Booking Request Sent!</h2><div class="modal-message" id="modalMessage"></div><button class="modal-btn" id="modalCloseBtn">Okay</button></div></div>
+
+    <script>
+        // Gallery images arrays (unchanged)
+        const birthdayImages = [ 'https://i.postimg.cc/J7SvLG8F/Screenshot-2026-03-30-105319.png', 'https://i.postimg.cc/tCPfCpRf/Screenshot-2026-03-30-105341.png', 'https://i.postimg.cc/02m32P5H/Screenshot-2026-03-30-105415.png', 'https://i.postimg.cc/8PW3PNkY/Screenshot-2026-03-30-105424.png', 'https://i.postimg.cc/wTJPTgx4/Screenshot-2026-03-30-105433.png', 'https://i.postimg.cc/3Jp6JYJT/Screenshot-2026-03-30-105446.png', 'https://i.postimg.cc/bNbMNpNf/Screenshot-2026-03-30-105501.png', 'https://i.postimg.cc/3Jp6JYJH/Screenshot-2026-03-30-105516.png', 'https://i.postimg.cc/nc75cpcp/Screenshot-2026-03-30-105530.png', 'https://i.postimg.cc/bNbMNpNr/Screenshot-2026-03-30-105547.png', 'https://i.postimg.cc/3Jp6JYJR/Screenshot-2026-03-30-105602.png', 'https://i.postimg.cc/dVYfhpLJ/Screenshot-2026-03-30-105616.png', 'https://i.postimg.cc/Vk8hJpdY/Screenshot-2026-03-30-105632.png', 'https://i.postimg.cc/fRNPVpJk/Screenshot-2026-03-30-105648.png', 'https://i.postimg.cc/bwh5ZWss/Screenshot-2026-03-30-105706.png', 'https://i.postimg.cc/xTMfrwwQ/Screenshot-2026-03-30-110251.png', 'https://i.postimg.cc/CLkhy334/Screenshot-2026-03-30-110304.png', 'https://i.postimg.cc/tCWq0KKW/Screenshot-2026-03-30-110319.png', 'https://i.postimg.cc/02DkgTT0/Screenshot-2026-03-30-110330.png' ];
+        const simpleImages = [ 'https://i.postimg.cc/brGv2dVZ/Screenshot-2026-03-30-110702.png', 'https://i.postimg.cc/sxB2Z1HH/Screenshot-2026-03-30-110717.png', 'https://i.postimg.cc/Bb8v1t7M/Screenshot-2026-03-30-110739.png', 'https://i.postimg.cc/T1yPWhNk/Screenshot-2026-03-30-110756.png', 'https://i.postimg.cc/5yHtFjKR/Screenshot-2026-03-30-110812.png', 'https://i.postimg.cc/NFWj8YZz/Screenshot-2026-03-30-110841.png', 'https://i.postimg.cc/Bbdn5sRw/Screenshot-2026-03-30-110857.png', 'https://i.postimg.cc/RhjZ192Y/Screenshot-2026-03-30-110913.png' ];
+        const seasonalImages = [ 'https://i.postimg.cc/mDnHnv07/Screenshot-2026-03-30-111152.png', 'https://i.postimg.cc/F15JrjFr/Screenshot-2026-03-30-111208.png', 'https://i.postimg.cc/fy09QHs0/Screenshot-2026-03-30-111223.png', 'https://i.postimg.cc/J0BkCT8t/Screenshot-2026-03-30-111238.png', 'https://i.postimg.cc/6qGvxHK4/Screenshot-2026-03-30-111253.png', 'https://i.postimg.cc/c6y8xQ1D/Screenshot-2026-03-30-111315.png', 'https://i.postimg.cc/sfB62sDy/Screenshot-2026-03-30-111329.png', 'https://i.postimg.cc/c1K9J04x/Screenshot-2026-03-30-111345.png', 'https://i.postimg.cc/QNB4MhxC/Screenshot-2026-03-30-111402.png', 'https://i.postimg.cc/1RgCzs58/Screenshot-2026-03-30-111420.png', 'https://i.postimg.cc/kMV15qX8/Screenshot-2026-03-30-111434.png', 'https://i.postimg.cc/1RgCzs5w/Screenshot-2026-03-30-111448.png' ];
+        const handstoeImages = [ 'https://i.postimg.cc/QM3GQVCP/Screenshot-2026-03-30-111941.png', 'https://i.postimg.cc/6QfsYwGX/Screenshot-2026-03-30-111954.png', 'https://i.postimg.cc/q7xfj069/Screenshot-2026-03-30-112012.png', 'https://i.postimg.cc/1zrxJPNS/Screenshot-2026-03-30-112028.png' ];
+        const pressonImages = [ 'https://i.postimg.cc/D0dBKyn2/Screenshot-2026-03-30-112309.png', 'https://i.postimg.cc/8khyvwWm/Screenshot-2026-03-30-112324.png', 'https://i.postimg.cc/mkN8G2BH/Screenshot-2026-03-30-112340.png', 'https://i.postimg.cc/sfpnWKSK/Screenshot-2026-03-30-112351.png', 'https://i.postimg.cc/T2rkbQm7/Screenshot-2026-03-30-112405.png', 'https://i.postimg.cc/tRhr6DPf/Screenshot-2026-03-30-112421.png' ];
+        
+        function createSlider(id, arr) { const c = document.getElementById(id); if(!c) return; c.innerHTML=''; [...arr,...arr].forEach((src,i)=>{ let s=document.createElement('div'); s.className='gallery-slide'; let img=document.createElement('img'); img.src=src; img.alt='Nail art'; s.appendChild(img); c.appendChild(s); }); }
+        createSlider('birthday-slider', birthdayImages); createSlider('simple-slider', simpleImages); createSlider('seasonal-slider', seasonalImages); createSlider('handstoes-slider', handstoeImages); createSlider('presson-slider', pressonImages);
+        
+        function createFallingDots(){ let cont=document.getElementById('fallingDots'); if(!cont) return; cont.innerHTML=''; let count=window.innerWidth<768?50:100; for(let i=0;i<count;i++){ let d=document.createElement('div'); d.className='dot'; let s=Math.random()*4+2; d.style.width=s+'px'; d.style.height=s+'px'; d.style.left=Math.random()*100+'%'; d.style.animationDelay=Math.random()*20+'s'; d.style.animationDuration=Math.random()*8+6+'s'; cont.appendChild(d); } }
+        createFallingDots();
+        
+        const pages = { home: document.getElementById('home-page'), gallery: document.getElementById('gallery-page'), booking: document.getElementById('booking-page') };
+        const navLinks = document.querySelectorAll('.nav-link');
+        const logo = document.querySelector('.logo');
+        const header = document.getElementById('main-header');
+        const scrollTopBtn = document.getElementById('scrollTop');
+        const modal = document.getElementById('confirmationModal');
+        const modalMsg = document.getElementById('modalMessage');
+        const modalClose = document.getElementById('modalCloseBtn');
+        
+        function switchPage(id){ Object.values(pages).forEach(p=>p.classList.remove('active')); pages[id].classList.add('active'); navLinks.forEach(l=>{ if(l.dataset.page===id) l.classList.add('active-page'); else l.classList.remove('active-page'); }); window.scrollTo(0,0); if(id==='booking'){ let today=new Date().toISOString().split('T')[0]; document.getElementById('date').min=today; let tom=new Date(); tom.setDate(tom.getDate()+1); document.getElementById('date').value=tom.toISOString().split('T')[0]; } history.pushState(null,'','#'+id); }
+        navLinks.forEach(l=>l.addEventListener('click',(e)=>{ e.preventDefault(); switchPage(l.dataset.page); mobileMenu.classList.remove('active'); hamburger.classList.remove('active'); document.body.style.overflow='auto'; }));
+        logo.addEventListener('click',()=>switchPage('home'));
+        document.querySelectorAll('.btn[data-page]').forEach(b=>b.addEventListener('click',(e)=>{ e.preventDefault(); switchPage(b.dataset.page); mobileMenu.classList.remove('active'); hamburger.classList.remove('active'); }));
+        
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click',()=>{ mobileMenu.classList.toggle('active'); hamburger.classList.toggle('active'); document.body.style.overflow=mobileMenu.classList.contains('active')?'hidden':'auto'; });
+        document.querySelectorAll('.mobile-links a, .mobile-menu-btn a').forEach(l=>l.addEventListener('click',()=>{ mobileMenu.classList.remove('active'); hamburger.classList.remove('active'); document.body.style.overflow='auto'; }));
+        
+        modalClose.addEventListener('click',()=>{ modal.classList.remove('active'); document.body.style.overflow='auto'; });
+        document.getElementById('bookingForm').addEventListener('submit',function(e){ e.preventDefault(); let fname=document.getElementById('firstName').value; let lname=document.getElementById('lastName').value; let phone=document.getElementById('phone').value; let email=document.getElementById('email').value; let svc=document.getElementById('service').options[document.getElementById('service').selectedIndex]?.text||''; let date=document.getElementById('date').value; let tm=document.getElementById('time').options[document.getElementById('time').selectedIndex]?.text||''; let notes=document.getElementById('notes').value; modalMsg.innerText=`✨ Thank you, ${fname} ${lname}! ✨\n\n✅ Booking request received.\n\n📋 Details:\n• Service: ${svc}\n• Date: ${new Date(date).toLocaleDateString()}\n• Time: ${tm}\n• Contact: ${phone}, ${email}\n\n📝 Notes: ${notes||'None'}\n\n📍 Address sent 24h before\n\n💸 A $25 deposit secures your appointment.\n\nQuestions? (786) 251-4782 / narajilove@gmail.com`; modal.classList.add('active'); document.body.style.overflow='hidden'; this.reset(); let td=new Date().toISOString().split('T')[0]; document.getElementById('date').min=td; let tom=new Date(); tom.setDate(tom.getDate()+1); document.getElementById('date').value=tom.toISOString().split('T')[0]; });
+        
+        scrollTopBtn.addEventListener('click',()=>window.scrollTo(0,0));
+        window.addEventListener('scroll',()=>{ if(window.scrollY>500) scrollTopBtn.classList.add('visible'); else scrollTopBtn.classList.remove('visible'); if(window.scrollY<50) header.classList.add('header-transparent'); else header.classList.remove('header-transparent'); });
+        window.addEventListener('resize',()=>{ createSlider('birthday-slider', birthdayImages); createSlider('simple-slider', simpleImages); createSlider('seasonal-slider', seasonalImages); createSlider('handstoes-slider', handstoeImages); createSlider('presson-slider', pressonImages); let dots=document.getElementById('fallingDots'); if(dots){ dots.innerHTML=''; createFallingDots(); } });
+        window.addEventListener('DOMContentLoaded',()=>{ createFallingDots(); let hash=location.hash.substring(1); if(hash&&pages[hash]) switchPage(hash); let td=new Date().toISOString().split('T')[0]; document.getElementById('date').min=td; header.classList.add('header-transparent'); });
+        window.addEventListener('popstate',()=>{ let hash=location.hash.substring(1); if(hash&&pages[hash]) switchPage(hash); });
+    </script>
+</body>
+</html>
