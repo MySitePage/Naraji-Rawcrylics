@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -191,6 +191,135 @@
         @keyframes scrollAll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-300px * 12)); } }
         .view-gallery-btn { text-align: center; margin: 30px 0 20px; }
         
+        .shea-callout {
+            background: linear-gradient(135deg, rgba(255,183,178,0.2), rgba(232,209,255,0.2), rgba(181,240,230,0.2));
+            border-radius: var(--border-radius);
+            padding: 20px 30px;
+            text-align: center;
+            margin: 30px 0;
+            border: 2px solid var(--soft-pink);
+            backdrop-filter: blur(4px);
+        }
+        .shea-callout p {
+            font-family: var(--accent-font);
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin: 0;
+        }
+        .shea-callout i {
+            color: #FF9B8A;
+            margin-right: 10px;
+        }
+        
+        /* Shea Shop Section */
+        .shea-shop {
+            margin: 60px 0;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .product-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(4px);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+        .product-image {
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product-title {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        .product-price {
+            font-size: 1.3rem;
+            color: #FF9B8A;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .product-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        .special-offer {
+            background: rgba(255,183,178,0.2);
+            padding: 10px;
+            border-radius: 12px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #FF9B8A;
+        }
+        .order-form-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(4px);
+            border-radius: var(--border-radius);
+            padding: 35px;
+            border: 1px solid var(--border-color);
+            margin-top: 30px;
+        }
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-glass);
+            color: var(--text-primary);
+            font-family: var(--body-font);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--soft-pink);
+        }
+        .quantity-select {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .quantity-select select {
+            width: auto;
+            min-width: 100px;
+        }
+        
         .brand-card, .service-card, .hour-card, .price-category, .policy-item, .tech-content, .booking-form-container { background: var(--card-bg); backdrop-filter: blur(4px); border-radius: var(--border-radius); padding: 30px; border: 1px solid var(--border-color); transition: background 0.3s ease; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 30px; margin-top: 40px; }
         .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 15px; }
@@ -204,9 +333,8 @@
         .gallery-slide:hover img { transform: scale(1.08); }
         @keyframes scrollSoft { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-280px * 6)); } }
         .category-title { font-family: var(--heading-font); font-size: 2rem; font-weight: 600; text-align: center; margin-bottom: 25px; color: var(--text-primary); }
-        .form-control { width: 100%; padding: 14px 18px; border: 1px solid var(--border-color); border-radius: 12px; background: var(--bg-glass); color: var(--text-primary); }
-        .form-control:focus { outline: none; border-color: var(--soft-pink); }
-        .submit-btn { background: linear-gradient(135deg, #FFB7B2, #E8D1FF, #B5F0E6, #FFD6A5, #A0C4FF); background-size: 300% 300%; color: #1a1a1a; font-weight: 600; padding: 14px 45px; border-radius: 40px; border: none; cursor: pointer; animation: softShift 8s ease infinite; }
+        .submit-btn { background: linear-gradient(135deg, #FFB7B2, #E8D1FF, #B5F0E6, #FFD6A5, #A0C4FF); background-size: 300% 300%; color: #1a1a1a; font-weight: 600; padding: 14px 45px; border-radius: 40px; border: none; cursor: pointer; animation: softShift 8s ease infinite; transition: transform 0.2s; }
+        .submit-btn:hover { transform: scale(1.02); }
         body.dark-mode .submit-btn { color: #000000; }
         footer { background: var(--bg-glass-solid); backdrop-filter: blur(8px); padding: 50px 0 30px; margin-top: 60px; border-top: 1px solid var(--border-color); }
         .footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; }
@@ -227,12 +355,14 @@
             @keyframes scrollAll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-215px * 12)); } }
             .gallery-slide { width: 200px; height: 200px; }
             @keyframes scrollSoft { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-220px * 6)); } }
+            .product-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 480px) {
             .slide-item { width: 160px; height: 160px; margin-right: 12px; }
             @keyframes scrollAll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-172px * 12)); } }
             .gallery-slide { width: 160px; height: 160px; }
             @keyframes scrollSoft { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-180px * 6)); } }
+            .shea-callout p { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -271,7 +401,7 @@
         </div>
     </header>
 
-    <!-- HOME PAGE -->
+    <!-- HOME PAGE (existing nail content remains unchanged) -->
     <div class="page active" id="home-page">
         <section class="hero">
             <div class="hero-content">
@@ -307,6 +437,10 @@
                     </div>
                 </div>
             </section>
+            
+            <div class="shea-callout">
+                <p><i class="fas fa-hand-peace"></i> Go check out my handmade shea butter!! <i class="fas fa-heart" style="color: #FF9B8A;"></i></p>
+            </div>
             
             <section class="services">
                 <h2 class="section-title">My Services<span>Luxury Nail Experiences</span></h2>
@@ -392,10 +526,94 @@
                 <div class="policy-item"><h3 class="policy-title"><i class="fas fa-hand-peace"></i> Preparation</h3><p class="policy-text">Arrive with bare nails unless removal booked. No extra guests without approval. Address sent 24h before.</p></div>
                 <div class="policy-item"><h3 class="policy-title"><i class="fas fa-credit-card"></i> Payment</h3><p class="policy-text">Cash preferred. Zelle or Cash App accepted before service.</p></div>
             </div></section>
+            
+            <!-- NEW SHEA BUTTER SHOP SECTION (separate from nail services) -->
+            <section class="shea-shop">
+                <h2 class="section-title">Whipped Shea Butters<span>Handmade • Natural • Luxurious</span></h2>
+                <div class="product-grid">
+                    <!-- 4 oz product -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://i.postimg.cc/MKqK9Hrb/Screenshot_20260405_201239_Docs_2.jpg" alt="4 oz Coconut Vanilla Body Butter">
+                        </div>
+                        <h3 class="product-title">Coconut Vanilla Body Butter</h3>
+                        <div class="product-price">4 oz (Glass Jar) – $15</div>
+                        <p class="product-description">Pamper yourself with our luxurious, all-natural body butter. Carefully handcrafted, each batch is piped by hand into a beautiful glass jar, making every jar unique. Infused with the warm, soothing scents of coconut and vanilla, it melts effortlessly into your skin, leaving it soft, nourished, and delicately scented. Made with 100% natural ingredients.</p>
+                    </div>
+                    <!-- 1 oz product -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://i.postimg.cc/yYsYLxrh/Screenshot_20260405_201153_Docs-2.jpg" alt="1 oz Coconut Vanilla Body Butter">
+                        </div>
+                        <h3 class="product-title">Coconut Vanilla Body Butter</h3>
+                        <div class="product-price">1 oz – $5</div>
+                        <p class="product-description">Same luxurious formula in a convenient travel size. Perfect for on-the-go hydration or to try before committing to the full size. Hand-piped and made with love.</p>
+                    </div>
+                </div>
+                
+                <!-- Special offer & shipping info -->
+                <div style="text-align: center; margin: 20px 0;">
+                    <div class="special-offer" style="display: inline-block; padding: 12px 25px;">
+                        🎁 Special: Two for $25 (mix & match sizes) 🎁
+                    </div>
+                    <p style="margin-top: 15px; font-size: 0.9rem; color: var(--text-secondary);">
+                        <i class="fas fa-shipping-fast"></i> Shipping: Each jar is carefully packaged and shipped within 1 business day. Delivery typically takes 2–3 business days via USPS First Class, or 1–2 days with Priority Mail.
+                    </p>
+                </div>
+                
+                <!-- SEPARATE ORDER FORM FOR SHEA BUTTER (includes address) -->
+                <div class="order-form-section">
+                    <h3 style="font-family: var(--accent-font); font-size: 2rem; text-align: center; margin-bottom: 25px;">Order Shea Butter</h3>
+                    <form id="sheaOrderForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" id="sheaName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" id="sheaEmail" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" id="sheaPhone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Shipping Address</label>
+                                <input type="text" id="sheaAddress" class="form-control" placeholder="Street address, city, state, ZIP" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Select Size</label>
+                                <select id="sheaSize" class="form-control" required>
+                                    <option value="">Choose size</option>
+                                    <option value="1oz">1 oz - $5</option>
+                                    <option value="4oz">4 oz (Glass Jar) - $15</option>
+                                    <option value="two-for-25">Two for $25 (mix & match - specify in notes)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Quantity</label>
+                                <input type="number" id="sheaQuantity" class="form-control" value="1" min="1" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Special Instructions or Notes</label>
+                            <textarea id="sheaNotes" class="form-control" rows="3" placeholder="e.g., mix & match sizes, scent preferences, etc."></textarea>
+                        </div>
+                        <div style="text-align: center; margin-top: 25px;">
+                            <button type="submit" class="submit-btn">Place Order Request</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     </div>
     
-    <!-- GALLERY PAGE -->
+    <!-- GALLERY PAGE (unchanged) -->
     <div class="page" id="gallery-page"><div class="container"><section class="gallery-section"><h2 class="section-title">Nail Gallery<span>✨ My Latest Creations ✨</span></h2>
         <div class="gallery-category"><h3 class="category-title">🎂 BIRTHDAY NAILS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="birthday-slider"></div></div></div>
         <div class="gallery-category"><h3 class="category-title">💕 SIMPLE SETS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="simple-slider"></div></div></div>
@@ -404,7 +622,7 @@
         <div class="gallery-category"><h3 class="category-title">📦 PRESS-ONS</h3><div class="gallery-slider-container"><div class="gallery-slider" id="presson-slider"></div></div></div>
     </section></div></div>
     
-    <!-- BOOKING PAGE -->
+    <!-- BOOKING PAGE (original nail booking form, untouched) -->
     <div class="page" id="booking-page"><section class="booking-hero"><div class="booking-content"><h1 class="booking-title">Book Your Appointment</h1><div class="booking-form-container"><form id="bookingForm"><div class="form-row"><div class="form-group"><label>First Name</label><input type="text" id="firstName" class="form-control" required></div><div class="form-group"><label>Last Name</label><input type="text" id="lastName" class="form-control" required></div></div><div class="form-row"><div class="form-group"><label>Phone</label><input type="tel" id="phone" class="form-control" placeholder="(786) 251-4782" required></div><div class="form-group"><label>Email</label><input type="email" id="email" class="form-control" placeholder="narajilove@gmail.com" required></div></div><div class="form-group"><label>Select Service</label><select id="service" class="form-control" required><option value="" disabled selected>Choose a service</option><option>Freestyle Full Set - $100</option><option>Acrylic Full Set - Short - $60</option><option>Acrylic Full Set - Medium - $70</option><option>Acrylic Full Set - Long - $80</option><option>Gel X Extensions - $80+</option><option>Ombre Full Set - $60-125</option><option>Gel Manicure - $50</option><option>Toe Service - $45-65</option><option>Custom Press-Ons - $110+</option><option>After Hours 9PM-11PM (+$40)</option><option>After Hours 12AM-2AM (+$60)</option><option>After Hours 2AM-4AM (+$80)</option><option>Soak Off Removal - $25</option></select></div><div class="form-row"><div class="form-group"><label>Preferred Date</label><input type="date" id="date" class="form-control" required></div><div class="form-group"><label>Preferred Time</label><select id="time" class="form-control" required><option value="" disabled selected>Select time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM (After Hours +$40)</option><option>12:00 AM (After Hours +$60)</option><option>2:00 AM (After Hours +$80)</option></select></div></div><div class="form-group"><label>Notes / Inspiration</label><textarea id="notes" class="form-control" rows="4"></textarea></div><div class="form-submit"><button type="submit" class="submit-btn">Submit Booking Request</button></div></form><div style="margin-top:30px; text-align:center;"><p><strong>📌 Important:</strong> $25 deposit required. Confirmation within 24h. Cash/Zelle/CashApp accepted.</p></div></div></div></section></div>
     
     <footer>
@@ -436,10 +654,11 @@
         </div>
     </footer>
     
-    <div class="modal-overlay" id="confirmationModal"><div class="modal-content"><div class="modal-icon"><i class="fas fa-check-circle"></i></div><h2 class="modal-title">Booking Request Sent!</h2><div class="modal-message" id="modalMessage"></div><button class="modal-btn" id="modalCloseBtn">Okay</button></div></div>
+    <!-- Modal for both forms (reused) -->
+    <div class="modal-overlay" id="confirmationModal"><div class="modal-content"><div class="modal-icon"><i class="fas fa-check-circle"></i></div><h2 class="modal-title" id="modalTitle">Request Sent!</h2><div class="modal-message" id="modalMessage"></div><button class="modal-btn" id="modalCloseBtn">Okay</button></div></div>
 
     <script>
-        // All gallery images
+        // All gallery images (same as before)
         const birthdayImages = [ 'https://i.postimg.cc/J7SvLG8F/Screenshot-2026-03-30-105319.png', 'https://i.postimg.cc/tCPfCpRf/Screenshot-2026-03-30-105341.png', 'https://i.postimg.cc/02m32P5H/Screenshot-2026-03-30-105415.png', 'https://i.postimg.cc/8PW3PNkY/Screenshot-2026-03-30-105424.png', 'https://i.postimg.cc/wTJPTgx4/Screenshot-2026-03-30-105433.png', 'https://i.postimg.cc/3Jp6JYJT/Screenshot-2026-03-30-105446.png', 'https://i.postimg.cc/bNbMNpNf/Screenshot-2026-03-30-105501.png', 'https://i.postimg.cc/3Jp6JYJH/Screenshot-2026-03-30-105516.png', 'https://i.postimg.cc/nc75cpcp/Screenshot-2026-03-30-105530.png', 'https://i.postimg.cc/bNbMNpNr/Screenshot-2026-03-30-105547.png', 'https://i.postimg.cc/3Jp6JYJR/Screenshot-2026-03-30-105602.png', 'https://i.postimg.cc/dVYfhpLJ/Screenshot-2026-03-30-105616.png', 'https://i.postimg.cc/Vk8hJpdY/Screenshot-2026-03-30-105632.png', 'https://i.postimg.cc/fRNPVpJk/Screenshot-2026-03-30-105648.png', 'https://i.postimg.cc/bwh5ZWss/Screenshot-2026-03-30-105706.png', 'https://i.postimg.cc/xTMfrwwQ/Screenshot-2026-03-30-110251.png', 'https://i.postimg.cc/CLkhy334/Screenshot-2026-03-30-110304.png', 'https://i.postimg.cc/tCWq0KKW/Screenshot-2026-03-30-110319.png', 'https://i.postimg.cc/02DkgTT0/Screenshot-2026-03-30-110330.png' ];
         const simpleImages = [ 'https://i.postimg.cc/brGv2dVZ/Screenshot-2026-03-30-110702.png', 'https://i.postimg.cc/sxB2Z1HH/Screenshot-2026-03-30-110717.png', 'https://i.postimg.cc/Bb8v1t7M/Screenshot-2026-03-30-110739.png', 'https://i.postimg.cc/T1yPWhNk/Screenshot-2026-03-30-110756.png', 'https://i.postimg.cc/5yHtFjKR/Screenshot-2026-03-30-110812.png', 'https://i.postimg.cc/NFWj8YZz/Screenshot-2026-03-30-110841.png', 'https://i.postimg.cc/Bbdn5sRw/Screenshot-2026-03-30-110857.png', 'https://i.postimg.cc/RhjZ192Y/Screenshot-2026-03-30-110913.png' ];
         const seasonalImages = [ 'https://i.postimg.cc/mDnHnv07/Screenshot-2026-03-30-111152.png', 'https://i.postimg.cc/F15JrjFr/Screenshot-2026-03-30-111208.png', 'https://i.postimg.cc/fy09QHs0/Screenshot-2026-03-30-111223.png', 'https://i.postimg.cc/J0BkCT8t/Screenshot-2026-03-30-111238.png', 'https://i.postimg.cc/6qGvxHK4/Screenshot-2026-03-30-111253.png', 'https://i.postimg.cc/c6y8xQ1D/Screenshot-2026-03-30-111315.png', 'https://i.postimg.cc/sfB62sDy/Screenshot-2026-03-30-111329.png', 'https://i.postimg.cc/c1K9J04x/Screenshot-2026-03-30-111345.png', 'https://i.postimg.cc/QNB4MhxC/Screenshot-2026-03-30-111402.png', 'https://i.postimg.cc/1RgCzs58/Screenshot-2026-03-30-111420.png', 'https://i.postimg.cc/kMV15qX8/Screenshot-2026-03-30-111434.png', 'https://i.postimg.cc/1RgCzs5w/Screenshot-2026-03-30-111448.png' ];
@@ -472,33 +691,31 @@
         function createFallingDots(){ let cont=document.getElementById('fallingDots'); if(!cont) return; cont.innerHTML=''; let count=window.innerWidth<768?50:100; for(let i=0;i<count;i++){ let d=document.createElement('div'); d.className='dot'; let s=Math.random()*4+2; d.style.width=s+'px'; d.style.height=s+'px'; d.style.left=Math.random()*100+'%'; d.style.animationDelay=Math.random()*20+'s'; d.style.animationDuration=Math.random()*8+6+'s'; cont.appendChild(d); } }
         createFallingDots();
         
-        // DARK MODE TOGGLE - TRUE BLACK BACKGROUND
+        // Dark mode toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
         const darkModeIcon = darkModeToggle.querySelector('i');
-        
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
             const isDark = document.body.classList.contains('dark-mode');
             localStorage.setItem('narajiDarkMode', isDark);
             darkModeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
         }
-        
         const savedDarkMode = localStorage.getItem('narajiDarkMode');
         if (savedDarkMode === 'true') {
             document.body.classList.add('dark-mode');
             darkModeIcon.className = 'fas fa-sun';
         }
-        
         darkModeToggle.addEventListener('click', toggleDarkMode);
         
-        // Navigation
+        // Navigation (unchanged)
         const pages = { home: document.getElementById('home-page'), gallery: document.getElementById('gallery-page'), booking: document.getElementById('booking-page') };
         const navLinks = document.querySelectorAll('.nav-link');
         const logo = document.querySelector('.logo');
         const header = document.getElementById('main-header');
         const scrollTopBtn = document.getElementById('scrollTop');
         const modal = document.getElementById('confirmationModal');
-        const modalMsg = document.getElementById('modalMessage');
+        const modalMessage = document.getElementById('modalMessage');
+        const modalTitle = document.getElementById('modalTitle');
         const modalClose = document.getElementById('modalCloseBtn');
         
         function switchPage(id){ Object.values(pages).forEach(p=>p.classList.remove('active')); pages[id].classList.add('active'); navLinks.forEach(l=>{ if(l.dataset.page===id) l.classList.add('active-page'); else l.classList.remove('active-page'); }); window.scrollTo(0,0); if(id==='booking'){ let today=new Date().toISOString().split('T')[0]; document.getElementById('date').min=today; let tom=new Date(); tom.setDate(tom.getDate()+1); document.getElementById('date').value=tom.toISOString().split('T')[0]; } history.pushState(null,'','#'+id); }
@@ -512,7 +729,33 @@
         document.querySelectorAll('.mobile-links a, .mobile-menu-btn a').forEach(l=>l.addEventListener('click',()=>{ mobileMenu.classList.remove('active'); hamburger.classList.remove('active'); document.body.style.overflow='auto'; }));
         
         modalClose.addEventListener('click',()=>{ modal.classList.remove('active'); document.body.style.overflow='auto'; });
-        document.getElementById('bookingForm').addEventListener('submit',function(e){ e.preventDefault(); let fname=document.getElementById('firstName').value; let lname=document.getElementById('lastName').value; let phone=document.getElementById('phone').value; let email=document.getElementById('email').value; let svc=document.getElementById('service').options[document.getElementById('service').selectedIndex]?.text||''; let date=document.getElementById('date').value; let tm=document.getElementById('time').options[document.getElementById('time').selectedIndex]?.text||''; let notes=document.getElementById('notes').value; modalMsg.innerText=`✨ Thank you, ${fname} ${lname}! ✨\n\n✅ Booking request received.\n\n📋 Details:\n• Service: ${svc}\n• Date: ${new Date(date).toLocaleDateString()}\n• Time: ${tm}\n• Contact: ${phone}, ${email}\n\n📝 Notes: ${notes||'None'}\n\n📍 Address sent 24h before\n\n💸 A $25 deposit secures your appointment.\n\nQuestions? (786) 251-4782 / narajilove@gmail.com`; modal.classList.add('active'); document.body.style.overflow='hidden'; this.reset(); let td=new Date().toISOString().split('T')[0]; document.getElementById('date').min=td; let tom=new Date(); tom.setDate(tom.getDate()+1); document.getElementById('date').value=tom.toISOString().split('T')[0]; });
+        
+        // NAIL BOOKING FORM (original, unchanged)
+        document.getElementById('bookingForm').addEventListener('submit',function(e){ e.preventDefault(); let fname=document.getElementById('firstName').value; let lname=document.getElementById('lastName').value; let phone=document.getElementById('phone').value; let email=document.getElementById('email').value; let svc=document.getElementById('service').options[document.getElementById('service').selectedIndex]?.text||''; let date=document.getElementById('date').value; let tm=document.getElementById('time').options[document.getElementById('time').selectedIndex]?.text||''; let notes=document.getElementById('notes').value; modalTitle.innerText = 'Booking Request Sent!'; modalMessage.innerText=`✨ Thank you, ${fname} ${lname}! ✨\n\n✅ Booking request received.\n\n📋 Details:\n• Service: ${svc}\n• Date: ${new Date(date).toLocaleDateString()}\n• Time: ${tm}\n• Contact: ${phone}, ${email}\n\n📝 Notes: ${notes||'None'}\n\n📍 Address sent 24h before\n\n💸 A $25 deposit secures your appointment.\n\nQuestions? (786) 251-4782 / narajilove@gmail.com`; modal.classList.add('active'); document.body.style.overflow='hidden'; this.reset(); let td=new Date().toISOString().split('T')[0]; document.getElementById('date').min=td; let tom=new Date(); tom.setDate(tom.getDate()+1); document.getElementById('date').value=tom.toISOString().split('T')[0]; });
+        
+        // SHEA BUTTER ORDER FORM (separate)
+        document.getElementById('sheaOrderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('sheaName').value;
+            const email = document.getElementById('sheaEmail').value;
+            const phone = document.getElementById('sheaPhone').value;
+            const address = document.getElementById('sheaAddress').value;
+            const sizeSelect = document.getElementById('sheaSize');
+            const size = sizeSelect.options[sizeSelect.selectedIndex]?.text || '';
+            const quantity = document.getElementById('sheaQuantity').value;
+            const notes = document.getElementById('sheaNotes').value;
+            
+            let total = 0;
+            if (size.includes('1 oz')) total = 5 * quantity;
+            else if (size.includes('4 oz')) total = 15 * quantity;
+            else if (size.includes('Two for $25')) total = 25 * Math.ceil(quantity/2);
+            
+            modalTitle.innerText = 'Shea Butter Order Received!';
+            modalMessage.innerText = `🧈 Thank you, ${name}! 🧈\n\n✅ Your order request has been received.\n\n📦 Order Details:\n• Product: Coconut Vanilla Body Butter\n• Size: ${size}\n• Quantity: ${quantity}\n• Total: $${total}\n\n📍 Shipping to:\n${address}\n\n📞 Contact: ${phone}, ${email}\n📝 Notes: ${notes || 'None'}\n\n🚚 Shipping within 1 business day via USPS.\n\nYou will receive a confirmation email with payment instructions. For questions: narajilove@gmail.com or (786) 251-4782`;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            this.reset();
+        });
         
         scrollTopBtn.addEventListener('click',()=>window.scrollTo(0,0));
         window.addEventListener('scroll',()=>{ if(window.scrollY>500) scrollTopBtn.classList.add('visible'); else scrollTopBtn.classList.remove('visible'); if(window.scrollY<50) header.classList.add('header-transparent'); else header.classList.remove('header-transparent'); });
